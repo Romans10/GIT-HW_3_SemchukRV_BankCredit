@@ -36,13 +36,14 @@ namespace HW_8_2_BankCredit
 
             Console.OutputEncoding = Encoding.Unicode;
             Console.InputEncoding = Encoding.Unicode;
-            Console.WriteLine("Goodbye, World!\nHomeWork 8.2. Банковский кредит.\n");
+            Console.WriteLine("Goodbye, World!\nHomeWork 8.2. Банківський кредит - розрахунок графіку платежів.\n");
             Console.Write("Початкова сума заборгованості складає : ");
             initialDebtAmount=Convert.ToDouble(Console.ReadLine());
             Console.Write("Запланований щомісячний платіж буде   : ");
             monthPayment = Convert.ToDouble(Console.ReadLine());
 
             CalculSchedulePayment(initialDebtAmount, monthPayment, 1);
+            Console.ReadKey();
         }
     }
 }
